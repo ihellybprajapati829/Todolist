@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        #clock {
+            font-size: 200%;
+            text-align: center;
+        }
+        ul {
+            margin-left: 21.8%;
+            margin-right: 20%;
+            padding-right: 5%;
+        }
+
+        ul li {
+            margin-top: 0;
+            cursor: pointer;
+            position: relative;
+            padding: 5px 25px 5px 15px;
+            list-style-type: none;
+            border: solid grey;
+            border-width: 0px 0.5px 0.5px 0.5px;
+            font-size: 100%;
+        }
+        table {
+            width: 50%;
+            margin-left: 25%;
+            border-color: grey;
+            border-style: solid;
+            border-width: 1px;
+        }
+
+        th {
+            padding: 10px 0px 10px 8px;
+        }
+    </style>
+</head>
+
+<body onload="showTime()">
+    <br>
+    <header>
+        <h1 style="text-align: center;font-weight: bolder;">To Do List</h1>
+        <div id="clock"></div>
+    </header>
+    <p class="text-center">Add items in your to do list:</p>
+    <form id="todo" style="margin-left:40%" >
+        <input id="todoip" placeholder="Item Name" style="padding-right:10%;"
+            class="border border-dark">
+        <button type="button" onclick="List()" style="margin-left: 1%;" class="btn btn-success">Add</button>
+    </form>
+    <br>
+    <table>
+        <tr>
+            <th class="text-left">Item Name</th>
+            <th class="text-center" style="width:80px">Delete</th>
+        </tr>
+    </table>
+    <ul id="List">
+    </ul>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
