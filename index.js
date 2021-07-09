@@ -35,15 +35,15 @@ function showTime()
     var hour = time.getHours();
     var min = time.getMinutes(); 
     var sec = time.getSeconds(); 
-    var i;
-    hour = checkTime(hour);
-    min = checkTime(min);
-    sec = checkTime(sec);
+//     var i;
+//     hour = checkTime(hour);
+//     min = checkTime(min);
+//     sec = checkTime(sec);
     document.getElementById("clock").innerHTML = hour + ":" + min + ":" + sec;
   
-    function checkTime(i) 
-    {
-        if (i < 10) {i = "0" + i};
-        return i;
-    }
+//     function checkTime(i) 
+//     {
+//         if (i < 10) {i = "0" + i};
+//         return i;
+//     }
 }
